@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>Try Bloch!</title>
+        
+        {% load static %}
+        <script src="{{ STATIC_URL }}vector.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+        <script src="{{ STATIC_URL }}OrbitControls.js"></script>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css">
+        <link rel="icon" type="image/x-icon" href="{{ STATIC_URL }}favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ STATIC_URL }}apple-touch-icon-180x180.png">
+        
+		<script type="text/javascript">
+        	var QgateData_p1 = [];
+			var QgateData_p2 = 
+				[{id:"x2", class:"greenBtn", text:"X", gate:"x"}
+				,{id:"y2", class:"greenBtn", text:"Y", gate:"y"}
+				,{id:"z2", class:"greenBtn", text:"Z", gate:"z"}
+				,{id:"h2", class:"blueBtn", text:"H", gate:"h"}
+				,{id:"s2", class:"blueBtn", text:"S", gate:"s"}
+				,{id:"t2", class:"redBtn", text:"T", gate:"t"}];
+			
+
+			/*window.onload = function(){
+				var elem = document.getElementById("sample");
+				var childs = elem.childNodes; 
+				var child = childs[0]; 
+				//console.log(elem);
+				console.log(childs);
+				child.setAttribute('class', 'redBtn');
+				child.setAttribute('id', 'x2');
+				child.innerText = 'X';
+			}*/
+		</script>
+
+    </head>
+    <body>
+
+        <h3>【Q-2021-b-10b:IBM Community Japan】&emsp;<a class="btn" id=start style="">RESTART</a></h3>
+        <br><br><br><br><br>
+        <h1>Bloch Reverse(量子リバーシ)</h1>
+        <!-- h2>Visualization of Single-Qubit Gates work with Bloch sphere</h2 -->
+        
+        <div id="p1" align="center" class="p1-gatebox"><a style="float:left; margin-left:20px; margin-top:10px;"></a><a style="float:left; margin-left:40px; margin-top:10px;"></a><a style="float:left; margin-left:40px; margin-top:10px;"></a><a style="float:left; margin-left:40px; margin-top:10px;"></a>
+		</div>
+		<!--
+            <a class="greenBtn" id=x style="float:left; margin-left:20px; margin-top:10px;">X</a>
+            <a class="greenBtn" id=y style="float:left; margin-left:40px; margin-top:10px;">Y</a>
+            <a class="greenBtn" id=z style="float:left; margin-left:40px; margin-top:10px;">Z</a>
+            <a class="blueBtn" id=h style="float:left; margin-left:40px; margin-top:10px;">H</a>
+            <a class="blueBtn" id=s style="float:left; margin-left:40px; margin-top:10px;">S</a>
+            <a class="blueBtn" id=st style="float:left; margin-left:35px; margin-top:10px; width: 17px;">S<sup><small>&dagger;</small></sup></a>
+            <a class="redBtn" id=t style="float:left; margin-left:40px; margin-top:10px;">T</a>
+            <a class="redBtn" id=tt style="float:left; margin-left:35px; margin-top:10px; width: 17px;">T<sup><small>&dagger;</small></sup></a>
+        </div-->
+
+        <!--div align="center" style="height:650px;">
+            <div align="center" style="float:left;" class="p1-gatebox-v">
+                <a class="greenBtn" id=x style="margin-left:20px; margin-top:10px;">X</a>
+                <a class="greenBtn" id=y style="margin-left:40px; margin-top:10px;">Y</a>
+                <a class="greenBtn" id=z style="margin-left:40px; margin-top:10px;">Z</a>
+                <a class="blueBtn" id=h style="margin-left:40px; margin-top:10px;">H</a>
+                <a class="blueBtn" id=s style="margin-left:40px; margin-top:10px;">S</a>
+                <a class="blueBtn" id=st style="margin-left:35px; margin-top:10px; width: 17px;">S<sup><small>&dagger;</small></sup></a>
+                <a class="redBtn" id=t style="margin-left:40px; margin-top:10px;">T</a>
+                <a class="redBtn" id=tt style="margin-left:35px; margin-top:10px; width: 17px;">T<sup><small>&dagger;</small></sup></a>
+            </div-->
+        <div align="center">
+            <canvas id="myCanvas"></canvas>
+        </div>
+
+        <div align="center">
+            <span style="color:#29b0da;">x-</span>&emsp;
+            <span style="color:#da2932;">y-</span>&emsp;
+            <span style="color:#9ceb43;">z-</span>
+        </div>
+
+        <div id="p2" align="center" class="p2-gatebox"><a style="float:left; margin-left:20px; margin-top:10px;"></a><a style="float:left; margin-left:40px; margin-top:10px;"></a><a style="float:left; margin-left:40px; margin-top:10px;"></a><a style="float:left; margin-left:40px; margin-top:10px;"></a>
+        </div>
+		
+            <!--a class="greenBtn" id=x2 style="float:left; margin-left:20px; margin-top:10px;">X</a>
+            <a class="greenBtn" id=y2 style="float:left; margin-left:40px; margin-top:10px;">Y</a>
+            <a class="greenBtn" id=z2 style="float:left; margin-left:40px; margin-top:10px;">Z</a>
+            <a class="blueBtn" id=h2 style="float:left; margin-left:40px; margin-top:10px;">H</a>
+            <a class="blueBtn" id=s2 style="float:left; margin-left:40px; margin-top:10px;">S</a -->
+
+        
+         <div align="center">
+            <!-- a class="btn" id=start style="">RESTART</a -->
+            <!-- a class="btn" id=start style="float:left; margin-left:35px; margin-top:6px;">RESTART</a-->
+        </div>
+
+        <div align = "center">  
+            <a class ="info" href = https://drive.google.com/file/d/12rZYthJRvGT4BhC7RkKk9RTA2eaSvyDP/view?usp=sharing><h2>Tutorial Video</h2></a>
+            <a class ="info" style = "margin-left:30px" href = "{% url 'index' %}"><h2>About Q ease:</h2></a>
+            <a class ="info" style = "margin-left:30px" href = https://github.com/nisuikiba/Q-ease><h2>Source Code</h2></a>
+        </div>
+
+    </body>
+</html>

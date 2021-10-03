@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+*{
+    font-family: "Hiragino Maru Gothic ProN", sans-serif;
+}
+
+body {
+    background: white;
+    margin: 0;
+}
+  
+.greenBtn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    background: #9ceb43;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.greenBtn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+.blueBtn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    background: #29b0da;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.blueBtn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+.redBtn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-size: 25px;
+    background: #da2932;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.redBtn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: rgb(226, 21, 89);
+    color: white;
+    width: 75px;
+    height: 75px;
+    margin: 10px auto;
+    line-height: 75px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-radius: 60%;
+    border-bottom: solid 3px #627295;
+    transition: .4s;
+}
+
+.btn:active {/*押したとき*/
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+}
+
+.gatebox {
+    padding: 1em;
+    margin: 7px auto;
+    width: 960px;
+    text-align: center;
+    height: 90px;
+    background: #eeeeee;/*背景色*/
+    border-radius: 15px;
+}
+
+.p1-gatebox-v {
+    padding: 1em;
+    margin: 7px auto;
+    width: 90px;
+    text-align: center;
+    height: 640px;
+    background: #ffeeee;/*背景色*/
+    border-radius: 15px;
+}
+
+.p1-gatebox{
+    padding: 1em;
+    margin: 7px auto;
+    width: 450px;/*860px;*/
+    text-align: center;
+    height: 90px;
+    background: #ffeeee;/*背景色*/
+    border-radius: 15px;
+}
+
+.p2-gatebox {
+    padding: 1em;
+    margin: 7px auto;
+    width:	450px;/*860px;*/
+    text-align: center;
+    height: 90px;
+    background: #eeeeff;/*背景色*/
+    border-radius: 15px;
+}
+
+
+h1{
+    font-size: 24px;
+    color:rgb(226, 21, 89);
+    text-align: center;
+}
+
+h2{
+    font-size: 12px;
+    color:rgb(226, 21, 89);
+    text-align: center;
+}
+
+h3 {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    position: fixed; 
+    top: 0;
+    left:0;
+    text-align: center;
+    color: rgb(226, 21, 89);
+    padding: 8px 16px;
+    box-shadow: 0px 2px 8px rgb(218, 218, 218);
+    font-size: 20px;
+}
+
+h4{
+    font-size: 13px;
+    color:rgb(226, 21, 89);
+    text-align: center;
+    font-weight:bold; 
+    display:inline; 
+}
+   
+span{
+    font-size: 15px;
+    text-align: center;
+    font-weight:bold; 
+    display:inline;
+}
+
+.info{
+    display: inline-block;
+    text-align: center;
+}
+
+.col{
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.col:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+.dam{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+    width:72px; 
+    height:72px;
+    background: rgb(226, 21, 89);/*ボタン色*/
+    color: #FFF;
+    border-radius: 3px;
+}

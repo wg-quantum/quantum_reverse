@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>Q ease:</title>
+        
+        {% load static %}
+        <script src="{{ STATIC_URL }}vector_top.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style.css">
+        <link rel="icon" type="image/x-icon" href="{{ STATIC_URL }}favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ STATIC_URL }}apple-touch-icon-180x180.png">　
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+        <script src="{{ STATIC_URL }}OrbitControls.js"></script>
+
+    </head>
+    <body>
+
+        <h3>Q ease:&emsp;</h3>
+        <br><br>
+        <span style="font-size:25px; color:rgb(226, 21, 89); display:block; margin-top:30px;">Q ease: へようこそ!</span>
+        <span style="font-size:16px; color:rgb(226, 21, 89); display:block; margin-top:30px;">直感的でない量子コンピュータの基礎理論を、直感にやさしく理解するためのおもちゃ箱</span>
+
+        <div align = "center"; style="margin-top:40px;">
+            <canvas id="topCanvas"></canvas>
+        </div>
+
+        <div align="center" style="margin-top:60px;">
+
+            <div style="display:inline-block; padding-right: 100px; padding-left:40px;">
+                <div align="center">
+                    <a href="{% url 'drawview' %}" class = "btn" style="width: 160px; height: 160px; line-height: 160px;"><span style="font-size: 18px;">Draw Gates!</span></a> 
+                </div>
+                <div align="center" style="margin-top:30px;">
+                    <span style="color:rgb(226, 21, 89); font-size: 10px">量子ゲートみたいなタイトルを描こう</span>
+                </div>
+            </div>
+
+            <div style="display:inline-block; padding-right: 70px;">
+                <div align="center">
+                    <a href="{% url 'tryview' %}" class = "btn" style="width: 160px; height: 160px; line-height: 160px;"><span style="font-size: 18px;">Try Bloch!</span></a> 
+                </div>
+                <div align="center" style="margin-top:30px;">
+                    <span style="color:rgb(226, 21, 89); font-size: 10px">単一量子ゲートの作用をブロッホ球で確認しよう</span>
+                </div>
+            </div>
+
+            <div style="display:inline-block;">
+                <div align="center">
+                    <a href="{% url 'challengeview' %}" class = "btn" style="width: 160px; height: 160px; line-height: 160px;"><span style="font-size: 18px;">Challenge Bloch!</span></a>
+                </div>
+                <div align="center" style="margin-top:30px;">
+                    <span style="color:rgb(226, 21, 89); font-size: 10px">単一量子ゲートをつかって目標の状態を実現しよう</span>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div align = "center" style="bottom: 10px; position: fixed; width: 100%;">
+                <a class="info" href = "{% url 'index' %}"><h2>English</h2></a>&emsp;
+                <a class="info" href = "{% url 'jaview' %}"><h2>日本語</h2></a>
+            </div>
+        </footer>
+
+    </body>
+</html>
