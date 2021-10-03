@@ -51,4 +51,4 @@ Draw a Title Image Like a Quantum Qates.
 - Use "Set Your Gate" to decide where to place the quantum gate you made.
     - After setting the position, please push the SET button.
 - When the title is completed, let's download the png image by pushing the DOWNLOAD button.
-    - Internet Explorer can not do this work([Details](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a#Browser_compatibility)).
+    - Internet Explorer can not do this work([Details](https://developer.mozilla.org/ja/docs/Web/HTML/Element/a#Browser_compatibility)).# quantum_reverse
